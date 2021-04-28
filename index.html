@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- main a-frame library -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+    <!-- physics library -->
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!-- particle system library -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <!-- environment library -->
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+
+    <!-- text geometry library -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+    <!-- extras library -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+    <!-- efor the nav mesh -->
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+  </head>
+  <body>
+
+    <a-scene fog="type: linear; color: #e82626">
+
+      <a-assets>
+
+          <a-asset-item id="model-one" src="models/model/model.obj"></a-asset-item>
+          <a-asset-item id="model-onemtl" src="models/model/model.mtl"></a-asset-item>
+
+          <a-asset-item id="model-two" src="models/modelTwo/model.obj"></a-asset-item>
+          <a-asset-item id="model-twomtl" src="models/modelTwo/model.mtl"></a-asset-item>
+
+          <a-asset-item id="model-three" src="models/modelThree/model.obj"></a-asset-item>
+          <a-asset-item id="model-threemtl" src="models/modelThree/model.mtl"></a-asset-item>
+
+          <a-asset-item id="model-four" src="models/modelFour/model.obj"></a-asset-item>
+          <a-asset-item id="model-fourmtl" src="models/modelFour/model.mtl"></a-asset-item>
+
+          <a-asset-item id="model-five" src="models/modelFive/model.obj"></a-asset-item>
+          <a-asset-item id="model-fivemtl" src="models/modelFive/model.mtl"></a-asset-item>
+
+          <a-asset-item id="model-six" src="models/modelSix/model.obj"></a-asset-item>
+          <a-asset-item id="model-sixmtl" src="models/modelSix/model.mtl"></a-asset-item>
+
+          <a-asset-item id="model-seven" src="models/modelSeven/model.obj"></a-asset-item>
+          <a-asset-item id="model-sevenmtl" src="models/modelSeven/model.mtl"></a-asset-item>
+
+          <a-sound src=“url(bobby.mp3)”><a-sound>
+
+
+
+      </a-assets>
+
+      <a-obj-model src="#model-one" mtl="#model-onemtl" rotation="180 70 0" position="-0.39 5 2.8" sound="src: url(bobby.mp3); autoplay: true"></a-obj-model>
+      <a-obj-model src="#model-two" mtl="#model-twomtl" rotation="180 270 0" position="-6.47 5 -4.28"></a-obj-model>
+      <!-- <a-obj-model src="#model-three" mtl="#model-threemtl" rotation="180 0 0" position="0 5 0"></a-obj-model> -->
+      <a-obj-model src="#model-four" mtl="#model-fourmtl" rotation="180 -40 0" position="-10.8 5 -2.58"></a-obj-model>
+      <a-obj-model src="#model-five" mtl="#model-fivemtl" rotation="180 100 0" position="0.07 5 -2.29"></a-obj-model>
+      <a-obj-model src="#model-six" mtl="#model-sixmtl" rotation="180 -20 0" position="-10 5 -0.45"></a-obj-model>
+      <a-obj-model src="#model-seven" mtl="#model-sevenmtl" rotation="180 150 0" position="-3.2 5 -3.9"></a-obj-model>
+
+
+
+
+            <a-sky color="#ECECEC"></a-sky>
+
+
+
+    <a-camera camera="" position="-4.9 1.7 0" rotation="-12.948846169956608 0 0" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
+          <a-cursor material="color: #5e0330; blending: multiply; opacity: 0.6" raycaster="" cursor="" geometry="radiusOuter: 0.286; radiusInner: 0.09"></a-cursor>
+    </a-camera>
+
+        <div class="a-loader-title" style="display: none;"></div></a-scene>
+  </body>
+</html>
