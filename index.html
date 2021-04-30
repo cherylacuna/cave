@@ -28,7 +28,7 @@
   </head>
   <body>
 
-    <a-scene fog="type: linear; color: #e82626">
+    <a-scene fog="type: linear; color: #e82626" loading-screen="dotsColor: pink; backgroundColor: black">
 
       <a-assets>
 
@@ -54,6 +54,9 @@
           <a-asset-item id="model-sevenmtl" src="models/modelSeven/model.mtl"></a-asset-item>
 
           <a-sound src=“url(bobby.mp3)”><a-sound>
+          <video id="selfie-cycle" autoplay loop="true" src="selfiecycle.mp4"></video>
+          <img id="unripe" src="unripe.gif">
+
 
 
 
@@ -75,7 +78,15 @@
 
 
     <a-camera camera="" position="-4.9 1.7 0" rotation="-12.948846169956608 0 0" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
+
           <a-cursor material="color: #5e0330; blending: multiply; opacity: 0.6" raycaster="" cursor="" geometry="radiusOuter: 0.286; radiusInner: 0.09"></a-cursor>
+          <a-entity text="value: {}{}{}; color: #5e0332; width: 3; blending: multiply; opacity: 0.6; align: center;" position="0 0 -1">
+          <a-video src="#selfie-cycle" width="1" height="1" position="2.36 0.656 -0.619"></a-video>
+          <!-- <a-image src="#unripe" width="0.2" height="0.2" position="2.36 0.656 -0.619"></a-image>
+          <a-image src="#unripe" width="0.2" height="0.2" position="2.36 0.656 -0.619"></a-image>
+          <a-image src="#unripe" width="0.2" height="0.2" position="2.36 0.656 -0.619"></a-image> -->
+
+</a-entity>
     </a-camera>
 
         <div class="a-loader-title" style="display: none;"></div></a-scene>
